@@ -1,0 +1,272 @@
+/**/
+*{
+    font-family: 'Comfortaa', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(117, 117, 117);
+}
+input {
+    width: 100%;
+}
+.btn{
+    margin: 2px;
+}
+#map-template{
+    cursor: crosshair;
+    z-index: 0;
+    height: 500px;
+    width: 500px;
+    top: 0;
+    position: absolute;
+}
+.noClick{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    opacity: 0.7;
+    top: 0px;
+
+}
+.card2{
+    padding: 10px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--light);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    box-shadow: 1px 2px 10px 1px black;
+}
+#layer{
+    display: ;
+    position: absolute;
+}
+    /* ----------------- Css de ELEMENTOS DE LEAFLET----------------- */
+.leaflet-control-attribution{
+    display: none;
+}
+.leaflet-control-container{
+float: right;
+position: relative;
+right: 75px;
+top: 50px
+
+}
+.leaflet-bar{
+    box-shadow: 0 0 5px 1px;
+}
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out{
+    font-size: 30px;
+    border: 2px solid rgba(0,0,0,0.2);
+    top: 50px;
+    left: 25px;
+}
+.leaflet-touch .leaflet-bar a:first-child{
+    width: 35px;
+    height: 35px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.leaflet-touch .leaflet-bar a:last-child{
+    width: 35px;
+    height: 35px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px; 
+}
+a .leaflet-control-zoom-in{
+    font-size: 35px;
+}
+.leaflet-popup-content-wrapper{
+}
+.leaflet-marker-icon{
+    opacity: 1;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover{
+    color: black;
+}
+.leaflet-control-zoom{
+    position: relative;
+}
+/* ----------------- Css de HEADER----------------- */
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    box-shadow: 0px 0px 25px 1px;
+    opacity: 0.9;
+}
+.theader{
+    top: 10px;
+    position: relative; 
+    
+}
+    /* ----------------- Css de botonMemu ----------------- */
+.botonMenu{
+    position: absolute;
+    margin: 5px;
+    opacity: 0.8;
+    top: 0px;
+}
+.botonMenu:before{
+    background: blue;
+}
+.botonMenu:hover{
+    opacity: 1;
+}
+    /* ----------------- Css de HEADER YFOOTER----------------- */
+    .hyf{
+        background: #489fe1;
+        color: black;
+    }
+/* ----------------- Css de FOOTER----------------- */
+
+.footer {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    box-shadow: 0px 0px 25px 4px;
+ }
+ .pFooter{
+    top: 10px;
+    position: relative; }
+    /* ----------------- Css Paleta de color ----------------- */
+
+ /*   .paletaColor{
+        position: absolute;
+        width: 100px;
+        left: 15px;
+        bottom: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    .paletaColor:hover{
+        position: absolute;
+        width: 110px;
+        left: 15px;
+        bottom: 20px;
+        opacity: 1;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }  */
+    /* ----------------- Css de INPUTFECHA que esta dentro del footer----------------- */
+#inputFecha{
+}
+.btnFechaDesde{
+
+}
+.btnFechaHasta{
+}
+.dateImg{
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    bottom: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.dateImg:hover{
+    position: absolute;
+    width: 110px;
+    right: 20px;
+    bottom: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+.move{
+    bottom: 140px;
+}.move:hover{
+    bottom: 140px;
+    width: 110px;
+    
+
+}
+/* ----------------- Css de popup----------------- */
+#popup{
+    z-index: 0;
+}
+ .nMarcador{
+     float: right;
+ }
+ #tituloPopup{
+ }
+ .fechaPopup{
+     text-align: right;
+  }
+  /*------------------ CSS Form ------------------*/
+  .queSucAqui{
+    position: relative;
+    left: 8%;
+  }
+  #form-control{
+      position: relative;
+    margin-top: 17%;
+    display: none;
+    z-index: 0;
+    width: 50%;
+}
+#inputSelect{
+    cursor: pointer;
+}
+#name{
+    position: relative;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#description{
+    position: relative;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#inputColor{
+    z-index: -1;
+    top: 23px;
+    width: 85px;
+    height: 30px;
+    box-shadow: 0px 0px 10px 1px #ccd1d3;
+    position: relative;
+    left: 104px;
+}
+.tipoDelito{
+    position: relative;
+    bottom: 7px;
+    height: 30px;
+    background: #1e90ff24;
+}
+.Esc{
+    position: relative;
+    float: right;
+    top: -25px;
+    right: -40px;
+    box-shadow: 0px 0px 8px 3px darkslategrey;
+}
+.formColores{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    z-index: 1;
+    background: white;
+    border-radius: 5px;
+    
+}

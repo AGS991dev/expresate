@@ -3,8 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Computer Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Expresate 3</title>
+    <!-- LEAFLET -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <!-- CSS -->
+  <link rel="stylesheet" href="/styles/map-template.css">
+    <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+  <!-- ANIMATES -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 </head>
@@ -14,7 +22,7 @@
   <!-- NAVIGATION -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="/">Books App</a>
+      <a class="navbar-brand" href="/">Expresate 3</a>
     </div>
   </nav>
 
@@ -50,6 +58,11 @@
     </div>
 
   </div>
+  <div id="map-template"></div>
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/map-template.js"></script>
 
 </body>
 
