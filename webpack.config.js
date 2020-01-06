@@ -11,7 +11,8 @@ module.exports = {
     path: path.join(__dirname, 'backend/public'),
     filename: 'js/bundle.js'
   },
-  module : {
+  
+  module: {
     rules: [
       {
         test: /\.css/,
@@ -19,9 +20,16 @@ module.exports = {
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader'
         ]
+      },
+      {
+        test: /\.png$/,
+        use: [
+          'file-loader'
+        ]
       }
     ]
   },
+  
   plugins: [
     new HtmlWebpackPlugin({
       template: './frontend/index.html',

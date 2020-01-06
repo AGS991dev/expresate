@@ -18,3 +18,11 @@ body {
   background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
+#map-template{
+  cursor: crosshair;
+  z-index: 0;
+  height: 500px;
+  width: 500px;
+  top: 0;
+  position: absolute;
+}

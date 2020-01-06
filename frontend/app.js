@@ -1,4 +1,7 @@
 import "./styles/app.css";
+import "./styles/map-template.css";
+import "./js/map-template.js";
+
 
 import Book from './models/Book.js';
 import UI from './UI.js';
