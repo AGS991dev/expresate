@@ -33,6 +33,15 @@ map.on('locationfound', e => {
   map.setView(coords, 14);
 
 });
+/* Iconos  */
+var myIcon = L.icon({
+  iconUrl: 'img/emojis/good.png',
+  iconSize: [45, 45],
+  iconAnchor: [20, 40],
+  popupAnchor: [-3, -76],
+  shadowSize: [68, 95],
+  shadowAnchor: [22, 94]
+});
 
 /* Agrego Marcadores estaticos adentro de la func DOMContentLoaded*/
 document.addEventListener("DOMContentLoaded", function() {
@@ -46,15 +55,9 @@ markerA.bindPopup('PRUEBA');
 markerA.addTo(map);
 markerA.openPopup();
 
-var myIcon = L.icon({
-  iconUrl: '../../marker.png',
-  iconSize: [38, 95],
-  iconAnchor: [22, 94],
-  popupAnchor: [-3, -76],
-  shadowSize: [68, 95],
-  shadowAnchor: [22, 94]
-});
+
 var markerB = L.marker([-34.4525997, -58.5107401], { icon: myIcon }).addTo(map);
+markerA.bindPopup('icono');
 map.addLayer(markerB);
 markerB.openPopup();
 });
@@ -70,7 +73,7 @@ function onMapClick(e) {
   var coords = [e.latlng.lat, e.latlng.lng];
   console.log(coords);
   console.log('click!!');
-  var marker = new L.Marker([e.latlng.lat, e.latlng.lng]);
+  var marker = new L.Marker([e.latlng.lat, e.latlng.lng], { icon: myIcon });
   marker.addTo(map);
   marker.bindPopup('AGREGADO!');
   marker.openPopup();
