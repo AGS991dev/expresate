@@ -12,7 +12,7 @@ body {
     cursor: crosshair;
     z-index: 0;
     height: 450px;
-    width: 90%;
+    width: 100%;
     top: 0;
     position: relative;
 }
