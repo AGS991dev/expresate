@@ -13,7 +13,7 @@ const app = express();
 require('./database');
 
 // settings
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 5000);
 
 // middlewares
 app.use(morgan('dev'));
@@ -37,5 +37,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 // start the server
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
-    console.log('http://localhost:4000/')
+    console.log('http://localhost:5000/')
 });

@@ -36,14 +36,14 @@ map.on('locationfound', e => {
 /* Iconos  */
 var myIcon = L.icon({
   iconUrl: 'img/emojis/good.png',
-  iconSize: [45, 45],
+  iconSize: [50, 50],
   iconAnchor: [20, 40],
   popupAnchor: [-3, -76],
   shadowSize: [68, 95],
   shadowAnchor: [22, 94]
 });
 
-/* Agrego Marcadores estaticos adentro de la func DOMContentLoaded*/
+/* Agrego Marcadores estaticos adentro de la func DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function() {
   console.log('Documento CARGADO DOMContentLoaded')
 const markerD = L.marker([-34.4525997, -58.5107401], 13);
@@ -73,7 +73,7 @@ function onMapClick(e) {
   var coords = [e.latlng.lat, e.latlng.lng];
   console.log(coords);
   console.log('click!!');
-  var marker = new L.Marker([e.latlng.lat, e.latlng.lng], { icon: myIcon });
+  var marker = new L.Marker([e.latlng.lat, e.latlng.lng]);
   marker.addTo(map);
   marker.bindPopup('AGREGADO!');
   marker.openPopup();
